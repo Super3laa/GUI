@@ -5,14 +5,11 @@ function creatWindow (){
         width:800,
         height:480,
         backgroundColor:"white",
-        webPreferences:{
-            nodeIntegration:false,
-            worldSafeExecuteJavaScript:true,
-            contextIsolation:true
-        }
     })
+    win.loadURL('http://localhost:3000');
+   //win.loadURL(`file://${path.join(__dirname, '/build/index.html')}`)
+    //win.webContents.openDevTools();
 
-    win.loadFile('index.html');
 }
 
 require('electron-reload')(__dirname,{

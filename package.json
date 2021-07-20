@@ -5,27 +5,46 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron .",
-    "watch": "webpack --config webpack.common.js --watch"
+    "start": "react-scripts start",
+    "watch": "webpack --config webpack.common.js --watch",
+    "build": "react-scripts build",
+    "electron":"ELECTRON_START_URL=file://home/superalaa/Documents/GUI/build/index.html electron .",
+    "electron-dev": "ELECTRON_START_URL=http://localhost:3000 electron ."
   },
   "author": "Alaa Essam",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.0.2",
     "electron": "^13.1.6",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-scripts": "^4.0.3",
+    "reactstrap": "^8.9.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
-    "babel-loader": "^8.1.0",
     "css-loader": "^4.3.0",
     "electron-reload": "^1.5.0",
+    "file-loader": "^6.2.0",
     "sass": "^1.26.11",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
