@@ -1,13 +1,21 @@
 {
-    "people_count": 2,
-    "is_child_present": 0,
-    "is_user_auth": 0,
-    "user_name": "Alaa",
-    "emotion": "happy",
-    "action": "focused",
-    "objects":[ "pedestrian", "traffic_light"],
-    "signs":["stop"],
-    "heartRate":98,
-    "doorLocks":"1001",
-    "fanStatus":1
+  "people_count": 2,
+  "is_child_present": 0,
+  "is_user_auth": 1,
+  "user_name": "Alaa",
+  "emotion": "surprised",
+  "action": "focused",
+  "objects": [
+    "pedestrian",
+    "traffic_light"
+  ],
+  "signs": [
+    "pedestrian crossing",
+    "stop"
+  ],
+  "heartRate": 84,
+  "doorLocks": "1001",
+  "emergencyContact": "01019308495",
+  "password": "1234",
+  "ble": 1
 }

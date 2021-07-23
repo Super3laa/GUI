@@ -3,22 +3,25 @@
   "version": "1.0.0",
   "description": "GUI for Graduation Projct SecureAI",
   "main": "index.js",
+  "homepage": "./",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "react-scripts start",
+    "start": "export BROWSER=none && react-scripts start",
     "watch": "webpack --config webpack.common.js --watch",
     "build": "react-scripts build",
-    "electron":"ELECTRON_START_URL=file://home/superalaa/Documents/GUI/build/index.html electron .",
-    "electron-dev": "ELECTRON_START_URL=http://localhost:3000 electron ."
+    "package": "electron-builder build --linux -c.extraMetadata.main=build/electron/main.js --publish never",
+    "electron": "export ELECTRON_START_URL=http://localhost:3000 && electron .",
+    "build-electron": "mkdir build/src && mkdir build/electron && cp -r ./main.js build/electron && cp -r src/shared/. build/src/shared"
   },
   "author": "Alaa Essam",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "bootstrap": "^5.0.2",
-    "electron": "^13.1.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "reactstrap": "^8.9.0"
   },
@@ -27,13 +30,19 @@
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "css-loader": "^4.3.0",
+    "electron-builder": "^21.1.1",
     "electron-reload": "^1.5.0",
     "file-loader": "^6.2.0",
+    "electron": "^13.1.6",
     "sass": "^1.26.11",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
+  },
+  "directories": {
+    "buildResources": "build",
+    "app": "build"
   },
   "browserslist": {
     "production": [

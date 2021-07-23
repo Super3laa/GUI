@@ -1,0 +1,31 @@
+.buttonGeneric{
+    width: 100%;
+    border: 0;
+    background-image: linear-gradient(to right , #1a606e , #1f94ab);
+    border-radius: 8px;
+    color: white;
+    font-size: 1.5rem;
+    padding:3px 10px;
+    transition: 0.8s;
+    margin-top: 0px;
+ }
+ .buttonGeneric:focus{
+    outline: 0;
+ }
+ .buttonGeneric:hover{
+    outline: 0;
+    opacity:0.7;
+ }
+ .MacAddressItem{
+    width: 100%;
+    padding: 4px 8px;
+    color: rgb(65, 65, 65);
+    background-color: rgba(231, 228, 228, 0.18);
+    margin:5px 0px ;
+    cursor: pointer;
+    transition-duration: 1s;
+ }
+
+ .MacAddressItem:hover{
+   background-color: rgba(231, 228, 228, 0.48);
+ }

@@ -1,0 +1,16 @@
+
+ .FormStyleAuth{
+    width: fit-content;
+     height: fit-content;
+     margin: auto;
+     border-radius: 12px;
+     box-shadow: #dedede85 0px 0.5rem 1.2rem;
+     background: rgb(255, 255, 255);
+     padding: 20px;
+ }
+ .InputHeader{
+    font-size: 14px;
+     text-align: right;
+     color: dimgrey;
+     margin: 0;
+ }

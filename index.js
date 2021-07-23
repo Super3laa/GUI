@@ -1,5 +1,6 @@
 const {app, BrowserWindow} = require("electron");
 const path = require('path')
+
 function creatWindow (){
     const  win = new BrowserWindow({
         width:800,
@@ -7,9 +8,6 @@ function creatWindow (){
         backgroundColor:"white",
     })
     win.loadURL('http://localhost:3000');
-   //win.loadURL(`file://${path.join(__dirname, '/build/index.html')}`)
-    //win.webContents.openDevTools();
-
 }
 
 require('electron-reload')(__dirname,{
@@ -17,3 +15,9 @@ require('electron-reload')(__dirname,{
 })
 
 app.whenReady().then(creatWindow)
+
+app.on('window-all-closed', function () {
+    if (process.platform !== 'darwin') {
+      app.quit();
+    }
+  });
