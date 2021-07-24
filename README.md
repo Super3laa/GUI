@@ -14,8 +14,8 @@ GUI uses a number of open source projects to work properly:
 - [ReactJS] - For the inner Front-End Design and State Mangement 
 - [Electron] - Running react smoothly as desktop app
 - [nodeJS] - evented I/O for the backend
-- [Express] - fast node.js network app framework [@tjholowaychuk]
-- 
+- [Express] - fast node.js network app framework.
+
 ## Installation
 
 GUI requires [Node.js](https://nodejs.org/) v12+ to run.
